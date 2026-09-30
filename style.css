@@ -1,0 +1,357 @@
+:root{
+    --firstPMC: rgb(122, 37, 51) ;
+    --firstPSC: rgb(187, 50, 73);
+    --firstPTC: #813844;
+    --text1C: bisque;
+    --myCursor :url("HK CUR.png")0 0 ,auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    cursor: var(--myCursor);
+    font-family: cursive;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.MainP{
+    flex-direction: row;
+}
+
+.QuestionP{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(var(--firstPMC) , var(--firstPSC));
+    color: var(--text1C);
+    align-content:center ;
+}
+
+#questioncat{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.Cont1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 425px;
+    padding: 50px;
+}
+.Cont2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 133px;
+}
+
+.Qbtns{
+    width: 100px;
+    height: 30px;
+    color: var(--text1C);
+    background-color: var(--firstPTC);
+    border: solid 3px var(--text1C) ;
+    border-radius: 10px;
+    transition: 1s;
+}
+.Qbtns:hover{
+    width: 150px;
+    height: 50px;
+    background-color: var(--text1C);
+    color: var(--firstPSC);
+}
+
+.NoP{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(35, 35, 35) , black);
+    color: lightgray;
+    align-content: center;
+}
+
+#Angrycat{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+}
+
+.Cont3{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-self: center;
+    
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.IndeedP{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--firstPMC) , var(--firstPSC));
+    color: var(--text1C);
+    position: relative;
+}
+#provetx{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.main-grid{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 1500px;
+    height: 1000px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.inner-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.tx-1{
+    color: var(--text1C);
+    text-align: center;
+}
+
+.st-1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.food-flex{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.food-grid{
+    height: 90%;
+    background-color: var(--text1C);
+    border-radius: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 160px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+.cards{
+    height: 150px;
+    width: 150px;
+    border: solid 5px var(--firstPMC);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+::-webkit-scrollbar-thumb{
+    visibility: visible;
+    background-color: var(--firstPMC);
+}
+::-webkit-scrollbar-corner{
+    visibility: hidden;
+}
+
+.radiop{
+    accent-color: var(--firstPMC);
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+} 
+
+
+.celebration{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--firstPMC) ,var(--firstPSC));
+    position: relative;
+}
+
+#cel-1tx{
+    color: var(--text1C);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+#cel-2tx{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    margin-left: 150px;
+    translate: 100%;
+    color: var(--text1C);
+    transition: transform 15s;
+}
+
+#cel:target #cel-2tx{
+   transform:translate(-100%);
+}
+
+#slider-1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    transition: left 8s , transform 15s;
+}
+#cel:target #slider-1{
+    left: 50%;
+    transform: translate(-50%) rotate(1800deg);
+}
+
+#slider-2{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    transition: right 8s , transform 15s;
+}
+#cel:target #slider-2{
+    right: 50%;
+    transform: translate(50%) rotate(1800deg);
+}
+
+#happycat {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 380px;
+    left: 25%;
+}
+
+#blackcat{
+     height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 210px;
+    right: 25%;
+}
+
+#cake{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#whitecat{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 465px;
+    right: 30%;
+    border-radius: 50%;
+}
+
+#yeahcat{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    top: 230px;
+    left: 30%;
+}
+
+#ballon1-1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 6s;
+}
+
+#cel:target #ballon1-1{
+    bottom: 100%;
+}
+
+#ballon2-1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 8s;
+}
+
+#cel:target #ballon2-1{
+    bottom: 100%;
+}
+
+#ballon1-2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 10s;
+}
+
+#cel:target #ballon1-2{
+    bottom: 100%;
+}
+
+#ballon2-2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 80%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 10s;
+}
+
+#cel:target #ballon2-2{
+    bottom: 100%;
+}
+
+#OBW{
+    position: absolute;
+    transform: translate(-200%);
+}

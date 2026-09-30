@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <title>A Virus Maybe ._.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+</head>
+
+
+<body>
+
+    <div class="MainP">
+
+
+        <div class="QuestionP">
+
+            
+
+            <div class="Cont1">
+
+                <div class="Qcat">
+                    <img id="questioncat" src="spidyy.jpg">
+                </div>
+
+                <div class="Qtext">
+                    <h1> Stop!...Are You Really Dodo?</h1>
+                </div>
+
+
+             <div class="Cont2">
+                    <div><button class="Qbtns" onclick="location.href='#YesP'">Indeed</button></div>
+                    <div><button class="Qbtns" onclick="location.href='#NoPtr'">Nope</button></div>
+             </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div id="NoPtr" class="NoP">
+            <div class="Cont3">
+                
+
+                    <div class="Angcat">
+                        <img id="Angrycat" src="Mad cat.jpg">
+                     </div>
+
+
+                     <div class="Angtext">
+                         <h3>A Wise Man Once Said...:</h3>
+                         <h3>"Why The Hell Are You Even Here Bro ._. ?"</h3>
+                    </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="YesP" class="IndeedP">
+
+            <h2 id="provetx">It's not that easy ... You have to prove it ._.</h2>
+
+            <div class="main-grid">
+
+                
+
+
+                <div class="inner-grid">
+                    
+                    <div>
+                        <h3 class="tx-1">Whats your favorite food?</h3>
+                        <img class="st-1" src="sticker/cook.jpg">
+                    </div>
+                    
+                    <div class="food-flex">
+                        <div class="food-grid">
+                            <input class="radiop" type="radio" name="food"><img class="cards" src="foods/pizza.jpg"></input>
+                            <input id="try" class="radiop" type="radio" name="food"><img class="cards" src="foods/shawarma.jpg"></input>
+                            <input id="futRad" class="radiop" type="radio" name="food"><img class="cards" src="foods/futochini.jpg"></input>
+                            <input class="radiop" type="radio" name="food"><img class="cards" src="foods/sushi.jpg"></input>
+                            <input class="radiop" type="radio" name="food"><img class="cards" src="foods/steak.jpg"></input>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="inner-grid">
+                    <div>
+                        <h3 class="tx-1">Whats your favorite color?</h3>
+                        <img class="st-1" src="sticker/color.jpg">
+                    </div>
+                    
+                    <div class="food-flex">
+                        <div class="food-grid">
+                            <input class="radiop" type="radio" name="color"><img class="cards" src="colors/blue.jpg"></input>
+                            <input class="radiop" type="radio" name="color"><img class="cards" src="colors/green.jpg"></input>
+                            <input class="radiop" type="radio" name="color"><img class="cards" src="colors/orange.jpg"></input>
+                            <input class="radiop" type="radio" name="color"><img class="cards" src="colors/pink.jpg"></input>
+                            <input id="redRad" class="radiop" type="radio" name="color"><img class="cards" src="colors/red.jpg"></input>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div id="cel" class="celebration">
+            <h2 id="cel-1tx">Oh..It's Really You!</h2>
+            <h2 id="cel-2tx">Happyyyyy Birthdayyyyy Dodo! , Wish you the best in your life and carrer and I hope to see you as the best computer scientist that has ever been in the whole universe. </h2>
+        
+            <img id="slider-1" src="cel/cherry.PNG">
+            <img id="slider-2" src="cel/cherry.PNG">
+            <img id="happycat" src="cel/happycat bcgR.gif">
+            <img id="blackcat" src="cel/final black cat.gif">
+            <img id="cake" src="cel/cake.PNG">
+            <img id="whitecat" src="cel/white cat.gif">
+            <img id="yeahcat" src="cel/yeah.gif">
+
+            <!-- Celebration effect made by me ._. -->
+            <img id="ballon1-1" src="cel/ballons 1.PNG" >
+            <img id="ballon2-1" src="cel/ballons 2.PNG" >
+            <img id="ballon1-2" src="cel/ballons 1.PNG" >
+            <img id="ballon2-2" src="cel/ballons 2.PNG" >
+
+            <audio id="OBW" src="cel/oh your birthday is better than a wedding.MP4"></audio>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+
+<script>
+
+var futYes = document.getElementById("futRad")
+var redYES = document.getElementById("redRad")
+
+    futYes.addEventListener("change", function () {
+    if (futYes.checked && redYES.checked) {
+        document.getElementById("OBW").play()
+        location.href = "#cel";
+    }
+});
+
+redYES.addEventListener("change", function () {
+    if (futYes.checked && redYES.checked) {
+         document.getElementById("OBW").play()
+        location.href = "#cel";
+    }
+});
+
+
+
+</script>
+
+
+</html>
