@@ -157,7 +157,7 @@ body{
 
 
 .food-grid{
-    height: 90%;
+    height: 85%;
     background-color: var(--text1C);
     border-radius: 10px;
     display: grid;
